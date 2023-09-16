@@ -77,7 +77,6 @@ ro.vendor.display.standard_d75_enable=true
 ro.vendor.display.update_dbi_by_temperature=true
 ro.vendor.histogram.enable=true
 ro.vendor.localhbm.enable=true
-ro.vendor.sre.enable=true
 
 # Graphics
 debug.sf.set_idle_timer_ms=1100
