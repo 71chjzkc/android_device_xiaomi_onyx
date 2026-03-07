@@ -499,3 +499,6 @@ PRODUCT_COPY_FILES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/onyx/onyx-vendor.mk)
+
+# Display refresh rates
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
