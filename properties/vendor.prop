@@ -52,7 +52,6 @@ persist.vendor.btstack.enable.twsplussho=true
 
 # Camera
 ro.camera.enableCamera1MaxZsl=1
-ro.camerax.extensions.enabled=true
 
 # Crypto
 ro.crypto.metadata_init_delete_all_keys.enabled=true
