@@ -1,9 +1,6 @@
 # CameraX
 ro.camerax.extensions.enabled=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Device
 ro.product.marketname=POCO F7
 ro.product.mod_device=onyx_global
@@ -20,11 +17,7 @@ ro.mediaserver.64b.enable=true
 ro.media.recorder-max-base-layer-fps=60
 ro.media.xml_variant.profiles=_tuna_v0
 
-# QTI
-ro.vendor.qti.va_aosp.support=1
-
 # Radio
-persist.vendor.data.mode=concurrent
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
