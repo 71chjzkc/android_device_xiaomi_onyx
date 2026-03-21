@@ -825,6 +825,47 @@
     <!-- Flag specifying whether VoNR is available on device -->
     <bool name="config_device_vonr_available">true</bool>
 
+    <!-- 5G NR SS-RSRP signal strength thresholds.
+         Adjusted for typical sub-6GHz 5G coverage. -->
+    <integer-array name="config_nr_ssrsrp_thresholds">
+        <item>-120</item> <!-- SIGNAL_STRENGTH_POOR -->
+        <item>-100</item> <!-- SIGNAL_STRENGTH_MODERATE -->
+        <item>-88</item>  <!-- SIGNAL_STRENGTH_GOOD -->
+        <item>-76</item>  <!-- SIGNAL_STRENGTH_GREAT -->
+    </integer-array>
+
+    <!-- 5G NR SS-RSRQ signal strength thresholds -->
+    <integer-array name="config_nr_ssrsrq_thresholds">
+        <item>-20</item> <!-- SIGNAL_STRENGTH_POOR -->
+        <item>-15</item> <!-- SIGNAL_STRENGTH_MODERATE -->
+        <item>-10</item> <!-- SIGNAL_STRENGTH_GOOD -->
+        <item>-3</item>  <!-- SIGNAL_STRENGTH_GREAT -->
+    </integer-array>
+
+    <!-- 5G NR SS-SINR signal strength thresholds -->
+    <integer-array name="config_nr_sssinr_thresholds">
+        <item>-5</item>  <!-- SIGNAL_STRENGTH_POOR -->
+        <item>5</item>   <!-- SIGNAL_STRENGTH_MODERATE -->
+        <item>15</item>  <!-- SIGNAL_STRENGTH_GOOD -->
+        <item>30</item>  <!-- SIGNAL_STRENGTH_GREAT -->
+    </integer-array>
+
+    <!-- LTE RSRP signal strength thresholds -->
+    <integer-array name="config_lte_rsrp_thresholds">
+        <item>-120</item> <!-- SIGNAL_STRENGTH_POOR -->
+        <item>-105</item> <!-- SIGNAL_STRENGTH_MODERATE -->
+        <item>-95</item>  <!-- SIGNAL_STRENGTH_GOOD -->
+        <item>-85</item>  <!-- SIGNAL_STRENGTH_GREAT -->
+    </integer-array>
+
+    <!-- LTE RSSNR signal strength thresholds -->
+    <integer-array name="config_lte_rssnr_thresholds">
+        <item>-3</item>  <!-- SIGNAL_STRENGTH_POOR -->
+        <item>1</item>   <!-- SIGNAL_STRENGTH_MODERATE -->
+        <item>5</item>   <!-- SIGNAL_STRENGTH_GOOD -->
+        <item>13</item>  <!-- SIGNAL_STRENGTH_GREAT -->
+    </integer-array>
+
     <!-- Config determines whether to update phone object when voice registration
          state changes. Voice radio tech change will always trigger an update of
          phone object irrespective of this config -->
