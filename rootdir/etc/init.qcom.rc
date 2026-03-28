@@ -100,6 +100,9 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # Create mountpoint for modem firmware partition
+    mkdir /vendor/modem_firmware 0755 root root
+
 on post-fs
 
 on early-boot

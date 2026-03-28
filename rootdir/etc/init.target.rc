@@ -787,13 +787,6 @@ service mi-factory_id-sh /vendor/odm/bin/init.mi.factory_id.sh
 on post-fs && property:ro.product.device=yupei
     start mi-factory_id-sh
 
-service mi-serial-sh /odm/bin/init.mi.serial.sh
-    class late_start
-    user root
-    group root system radio
-    disabled
-    oneshot
-
 service vendor.sensors-hal-multihal /vendor/bin/hw/android.hardware.sensors-service.xiaomi-multihal
     override
     class hal

@@ -59,12 +59,11 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/compatibility_matrix.device.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml \
 
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+DEVICE_MATRIX_FILE := device/qcom/vendor-common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/configs/hidl/manifest.xml \
-    hardware/qcom-caf/sm8750/audio/primary-hal/configs/sun/manifest_audio_qti_services.xml
+    $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
